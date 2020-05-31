@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="14.751" tests="11" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="D:\Program Files\JetBrains\IntelliJ IDEA 2019.3.4\workspace\api_auto\target\test-classes;D:\Program Files\JetBrains\IntelliJ IDEA 2019.3.4\workspace\api_auto\target\classes;D:\Program Files\apache-maven-3.6.3\repository\cn\afterturn\easypoi-annotation\4.0.0\easypoi-annotation-4.0.0.jar;D:\Program Files\apache-maven-3.6.3\repository\cn\afterturn\easypoi-base\4.0.0\easypoi-base-4.0.0.jar;D:\Program Files\apache-maven-3.6.3\repository\org\apache\poi\poi\4.0.0\poi-4.0.0.jar;D:\Program Files\apache-maven-3.6.3\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;D:\Program Files\apache-maven-3.6.3\repository\org\apache\poi\poi-ooxml\4.0.0\poi-ooxml-4.0.0.jar;D:\Program Files\apache-maven-3.6.3\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;D:\Program Files\apache-maven-3.6.3\repository\com\github\virtuald\curvesapi\1.04\curvesapi-1.04.jar;D:\Program Files\apache-maven-3.6.3\repository\org\apache\poi\poi-ooxml-schemas\4.0.0\poi-ooxml-schemas-4.0.0.jar;D:\Program Files\apache-maven-3.6.3\repository\org\apache\xmlbeans\xmlbeans\3.0.1\xmlbeans-3.0.1.jar;D:\Program Files\apache-maven-3.6.3\repository\com\google\guava\guava\16.0.1\guava-16.0.1.jar;D:\Program Files\apache-maven-3.6.3\repository\org\apache\commons\commons-lang3\3.2.1\commons-lang3-3.2.1.jar;D:\Program Files\apache-maven-3.6.3\repository\ognl\ognl\3.2.6\ognl-3.2.6.jar;D:\Program Files\apache-maven-3.6.3\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;D:\Program Files\apache-maven-3.6.3\repository\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;D:\Program Files\apache-maven-3.6.3\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;D:\Program Files\apache-maven-3.6.3\repository\org\testng\testng\6.8.21\testng-6.8.21.jar;D:\Program Files\apache-maven-3.6.3\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;D:\Program Files\apache-maven-3.6.3\repository\com\beust\jcommander\1.27\jcommander-1.27.jar;D:\Program Files\apache-maven-3.6.3\repository\com\alibaba\fastjson\1.2.47\fastjson-1.2.47.jar;D:\Program Files\apache-maven-3.6.3\repository\org\apache\httpcomponents\httpclient\4.5.8\httpclient-4.5.8.jar;D:\Program Files\apache-maven-3.6.3\repository\org\apache\httpcomponents\httpcore\4.4.11\httpcore-4.4.11.jar;D:\Program Files\apache-maven-3.6.3\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;D:\Program Files\apache-maven-3.6.3\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;D:\Program Files\apache-maven-3.6.3\repository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar;D:\Program Files\apache-maven-3.6.3\repository\commons-dbutils\commons-dbutils\1.6\commons-dbutils-1.6.jar;D:\Program Files\apache-maven-3.6.3\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;D:\Program Files\apache-maven-3.6.3\repository\io\qameta\allure\allure-testng\2.6.0\allure-testng-2.6.0.jar;D:\Program Files\apache-maven-3.6.3\repository\io\qameta\allure\allure-descriptions-javadoc\2.6.0\allure-descriptions-javadoc-2.6.0.jar;D:\Program Files\apache-maven-3.6.3\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;D:\Program Files\apache-maven-3.6.3\repository\io\qameta\allure\allure-java-commons\2.6.0\allure-java-commons-2.6.0.jar;D:\Program Files\apache-maven-3.6.3\repository\io\qameta\allure\allure2-model-api\1.0-BETA6\allure2-model-api-1.0-BETA6.jar;D:\Program Files\apache-maven-3.6.3\repository\io\qameta\allure\allure2-model-pojo\1.0-BETA6\allure2-model-pojo-1.0-BETA6.jar;D:\Program Files\apache-maven-3.6.3\repository\org\apache\tika\tika-core\1.14\tika-core-1.14.jar;D:\Program Files\apache-maven-3.6.3\repository\io\qameta\allure\allure2-model-jackson\1.0-BETA6\allure2-model-jackson-1.0-BETA6.jar;D:\Program Files\apache-maven-3.6.3\repository\com\fasterxml\jackson\core\jackson-databind\2.7.0\jackson-databind-2.7.0.jar;D:\Program Files\apache-maven-3.6.3\repository\com\fasterxml\jackson\core\jackson-annotations\2.7.0\jackson-annotations-2.7.0.jar;D:\Program Files\apache-maven-3.6.3\repository\com\fasterxml\jackson\core\jackson-core\2.7.0\jackson-core-2.7.0.jar;D:\Program Files\apache-maven-3.6.3\repository\com\fasterxml\jackson\module\jackson-module-jaxb-annotations\2.7.0\jackson-module-jaxb-annotations-2.7.0.jar;D:\Program Files\apache-maven-3.6.3\repository\org\aspectj\aspectjrt\1.8.10\aspectjrt-1.8.10.jar;D:\Program Files\apache-maven-3.6.3\repository\org\jooq\joor\0.9.6\joor-0.9.6.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="allure.link.issue.pattern" value="https://example.org/issue/{}"/>
+    <property name="sun.boot.library.path" value="D:\Program Files\Java\jdk1.8.0_91\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\123\AppData\Local\Temp\surefire7621115736801616892\surefirebooter8128420978070045564.jar C:\Users\123\AppData\Local\Temp\surefire7621115736801616892 2020-05-28T23-29-09_976-jvmRun1 surefire5974610751708865180tmp surefire_06341567578945077425tmp"/>
+    <property name="surefire.test.class.path" value="D:\Program Files\JetBrains\IntelliJ IDEA 2019.3.4\workspace\api_auto\target\test-classes;D:\Program Files\JetBrains\IntelliJ IDEA 2019.3.4\workspace\api_auto\target\classes;D:\Program Files\apache-maven-3.6.3\repository\cn\afterturn\easypoi-annotation\4.0.0\easypoi-annotation-4.0.0.jar;D:\Program Files\apache-maven-3.6.3\repository\cn\afterturn\easypoi-base\4.0.0\easypoi-base-4.0.0.jar;D:\Program Files\apache-maven-3.6.3\repository\org\apache\poi\poi\4.0.0\poi-4.0.0.jar;D:\Program Files\apache-maven-3.6.3\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;D:\Program Files\apache-maven-3.6.3\repository\org\apache\poi\poi-ooxml\4.0.0\poi-ooxml-4.0.0.jar;D:\Program Files\apache-maven-3.6.3\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;D:\Program Files\apache-maven-3.6.3\repository\com\github\virtuald\curvesapi\1.04\curvesapi-1.04.jar;D:\Program Files\apache-maven-3.6.3\repository\org\apache\poi\poi-ooxml-schemas\4.0.0\poi-ooxml-schemas-4.0.0.jar;D:\Program Files\apache-maven-3.6.3\repository\org\apache\xmlbeans\xmlbeans\3.0.1\xmlbeans-3.0.1.jar;D:\Program Files\apache-maven-3.6.3\repository\com\google\guava\guava\16.0.1\guava-16.0.1.jar;D:\Program Files\apache-maven-3.6.3\repository\org\apache\commons\commons-lang3\3.2.1\commons-lang3-3.2.1.jar;D:\Program Files\apache-maven-3.6.3\repository\ognl\ognl\3.2.6\ognl-3.2.6.jar;D:\Program Files\apache-maven-3.6.3\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;D:\Program Files\apache-maven-3.6.3\repository\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;D:\Program Files\apache-maven-3.6.3\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;D:\Program Files\apache-maven-3.6.3\repository\org\testng\testng\6.8.21\testng-6.8.21.jar;D:\Program Files\apache-maven-3.6.3\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;D:\Program Files\apache-maven-3.6.3\repository\com\beust\jcommander\1.27\jcommander-1.27.jar;D:\Program Files\apache-maven-3.6.3\repository\com\alibaba\fastjson\1.2.47\fastjson-1.2.47.jar;D:\Program Files\apache-maven-3.6.3\repository\org\apache\httpcomponents\httpclient\4.5.8\httpclient-4.5.8.jar;D:\Program Files\apache-maven-3.6.3\repository\org\apache\httpcomponents\httpcore\4.4.11\httpcore-4.4.11.jar;D:\Program Files\apache-maven-3.6.3\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;D:\Program Files\apache-maven-3.6.3\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;D:\Program Files\apache-maven-3.6.3\repository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar;D:\Program Files\apache-maven-3.6.3\repository\commons-dbutils\commons-dbutils\1.6\commons-dbutils-1.6.jar;D:\Program Files\apache-maven-3.6.3\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;D:\Program Files\apache-maven-3.6.3\repository\io\qameta\allure\allure-testng\2.6.0\allure-testng-2.6.0.jar;D:\Program Files\apache-maven-3.6.3\repository\io\qameta\allure\allure-descriptions-javadoc\2.6.0\allure-descriptions-javadoc-2.6.0.jar;D:\Program Files\apache-maven-3.6.3\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;D:\Program Files\apache-maven-3.6.3\repository\io\qameta\allure\allure-java-commons\2.6.0\allure-java-commons-2.6.0.jar;D:\Program Files\apache-maven-3.6.3\repository\io\qameta\allure\allure2-model-api\1.0-BETA6\allure2-model-api-1.0-BETA6.jar;D:\Program Files\apache-maven-3.6.3\repository\io\qameta\allure\allure2-model-pojo\1.0-BETA6\allure2-model-pojo-1.0-BETA6.jar;D:\Program Files\apache-maven-3.6.3\repository\org\apache\tika\tika-core\1.14\tika-core-1.14.jar;D:\Program Files\apache-maven-3.6.3\repository\io\qameta\allure\allure2-model-jackson\1.0-BETA6\allure2-model-jackson-1.0-BETA6.jar;D:\Program Files\apache-maven-3.6.3\repository\com\fasterxml\jackson\core\jackson-databind\2.7.0\jackson-databind-2.7.0.jar;D:\Program Files\apache-maven-3.6.3\repository\com\fasterxml\jackson\core\jackson-annotations\2.7.0\jackson-annotations-2.7.0.jar;D:\Program Files\apache-maven-3.6.3\repository\com\fasterxml\jackson\core\jackson-core\2.7.0\jackson-core-2.7.0.jar;D:\Program Files\apache-maven-3.6.3\repository\com\fasterxml\jackson\module\jackson-module-jaxb-annotations\2.7.0\jackson-module-jaxb-annotations-2.7.0.jar;D:\Program Files\apache-maven-3.6.3\repository\org\aspectj\aspectjrt\1.8.10\aspectjrt-1.8.10.jar;D:\Program Files\apache-maven-3.6.3\repository\org\jooq\joor\0.9.6\joor-0.9.6.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="allure.results.directory" value="D:\Program Files\JetBrains\IntelliJ IDEA 2019.3.4\workspace\api_auto\target/allure-results"/>
+    <property name="user.home" value="C:\Users\123"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="D:\Program Files\Java\jdk1.8.0_91\jre"/>
+    <property name="basedir" value="D:\Program Files\JetBrains\IntelliJ IDEA 2019.3.4\workspace\api_auto"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\123\AppData\Local\Temp\surefire7621115736801616892\surefirebooter8128420978070045564.jar;D:\Program Files\apache-maven-3.6.3\repository/org/aspectj/aspectjweaver/1.9.2/aspectjweaver-1.9.2.jar"/>
+    <property name="sun.boot.class.path" value="D:\Program Files\Java\jdk1.8.0_91\jre\lib\resources.jar;D:\Program Files\Java\jdk1.8.0_91\jre\lib\rt.jar;D:\Program Files\Java\jdk1.8.0_91\jre\lib\sunrsasign.jar;D:\Program Files\Java\jdk1.8.0_91\jre\lib\jsse.jar;D:\Program Files\Java\jdk1.8.0_91\jre\lib\jce.jar;D:\Program Files\Java\jdk1.8.0_91\jre\lib\charsets.jar;D:\Program Files\Java\jdk1.8.0_91\jre\lib\jfr.jar;D:\Program Files\Java\jdk1.8.0_91\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_91-b15"/>
+    <property name="user.name" value="123"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="6.3"/>
+    <property name="java.endorsed.dirs" value="D:\Program Files\Java\jdk1.8.0_91\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="D:\Program Files\apache-maven-3.6.3\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\123\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_91"/>
+    <property name="user.dir" value="D:\Program Files\JetBrains\IntelliJ IDEA 2019.3.4\workspace\api_auto"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="idea.version2019.3.4" value="true"/>
+    <property name="java.library.path" value="D:\Program Files\Java\jdk1.8.0_91\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Program Files\Java\jdk1.8.0_91\bin;D:\Program Files\Java\jdk1.8.0_91\jre\bin;D:\app\123\product\instantclient_10_2;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\strawberry\c\bin;C:\strawberry\perl\bin;C:\Program Files\TortoiseSVN\bin;D:\Program Files\apache-maven-3.6.3\bin;C:\Program Files (x86)\IDM Computer Solutions\UltraEdit\;D:\app\123\product\instantclient_10_2;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.91-b15"/>
+    <property name="java.ext.dirs" value="D:\Program Files\Java\jdk1.8.0_91\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="test" classname="com.lemon17.cases.LoginCase" time="1.779"/>
+  <testcase name="test" classname="com.lemon17.cases.LoginCase" time="0.144"/>
+  <testcase name="test" classname="com.lemon17.cases.LoginCase" time="0.095"/>
+  <testcase name="test" classname="com.lemon17.cases.LoginCase" time="0.113"/>
+  <testcase name="test" classname="com.lemon17.cases.LoginCase" time="0.134"/>
+  <testcase name="test" classname="com.lemon17.cases.LoginCase" time="0.091"/>
+  <testcase name="test" classname="com.lemon17.cases.RechargeCase" time="0.134">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.lemon17.cases.RechargeCase.test(RechargeCase.java:91)
+</failure>
+    <system-out><![CDATA[PASSED: test(CaseInfo{caseId=1, name='login', url='http://api.lemonban.com/futureloan/member/login', type='post', desc='传手机号,不传密码', params='{"mobile_phone":"19000000000","pwd":""}', contentType='json', expectedData='{"$.code":0,"$.msg":"OK"}', SQL='null'})
+PASSED: test(CaseInfo{caseId=2, name='login', url='http://api.lemonban.com/futureloan/member/login', type='post', desc='不传手机号，传密码', params='{"mobile_phone":"","pwd":"123456"}', contentType='json', expectedData='{"$.code":0,"$.msg":"OK"}', SQL='null'})
+PASSED: test(CaseInfo{caseId=3, name='login', url='http://api.lemonban.com/futureloan/member/login', type='post', desc='不合格的手机号', params='{"mobile_phone":"123","pwd":"123456"}', contentType='json', expectedData='{"$.code":0,"$.msg":"OK"}', SQL='null'})
+PASSED: test(CaseInfo{caseId=4, name='login', url='http://api.lemonban.com/futureloan/member/login', type='post', desc='合格的手机号+不合格密码', params='{"mobile_phone":"13000005555","pwd":"12345"}', contentType='json', expectedData='{"$.code":0,"$.msg":"OK"}', SQL='null'})
+PASSED: test(CaseInfo{caseId=5, name='login', url='http://api.lemonban.com/futureloan/member/login', type='post', desc='合格手机号+合格密码', params='{"mobile_phone":"13000005555","pwd":"12345678"}', contentType='json', expectedData='{"$.code":0,"$.msg":"OK"}', SQL='null'})
+PASSED: test(CaseInfo{caseId=6, name='login', url='http://api.lemonban.com/futureloan/member/login', type='post', desc='重复以上的手机号+密码', params='{"mobile_phone":"13000005555","pwd":"12345678"}', contentType='json', expectedData='{"$.code":0,"$.msg":"OK","$.data.mobile_phone":"13888444411"}', SQL='null'})
+
+===============================================
+    登录
+    Tests run: 6, Failures: 0, Skips: 0
+===============================================
+
+[INFO] 2020-05-28 23:29:24 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254)----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjgwMDYyfQ.omERaaQb8xAnf3fwJHXCrmLD96c4r9wqF1Vs4UksCT5bb7Hm4S854eLmLljxGukiYOVF35OLw-T-qUOa6U1MGA, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+[INFO] 2020-05-28 23:29:24 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138)----请求体：{"member_id":"-1","amount":"6300"}
+响应：{
+	"msg":"无权限访问，请检查参数",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1007,
+	"data":null
+}
+断言结果：false
+]]></system-out>
+  </testcase>
+  <testcase name="test" classname="com.lemon17.cases.RechargeCase" time="0.111">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.lemon17.cases.RechargeCase.test(RechargeCase.java:91)
+</failure>
+    <system-out><![CDATA[[INFO] 2020-05-28 23:29:24 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254)----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjgwMDYyfQ.omERaaQb8xAnf3fwJHXCrmLD96c4r9wqF1Vs4UksCT5bb7Hm4S854eLmLljxGukiYOVF35OLw-T-qUOa6U1MGA, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+[INFO] 2020-05-28 23:29:24 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138)----请求体：{"member_id":"100051395","amount":"1116300"}
+响应：{
+	"msg":"余额必须大于0并且小于或者等于500000",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+断言结果：false
+]]></system-out>
+  </testcase>
+  <testcase name="test" classname="com.lemon17.cases.RechargeCase" time="0.111">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.lemon17.cases.RechargeCase.test(RechargeCase.java:91)
+</failure>
+    <system-out><![CDATA[[INFO] 2020-05-28 23:29:24 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254)----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjgwMDYyfQ.omERaaQb8xAnf3fwJHXCrmLD96c4r9wqF1Vs4UksCT5bb7Hm4S854eLmLljxGukiYOVF35OLw-T-qUOa6U1MGA, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+[INFO] 2020-05-28 23:29:24 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138)----请求体：{"member_id":"100051395","amount":"-6300"}
+响应：{
+	"msg":"余额必须大于0并且小于或者等于500000",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+断言结果：false
+]]></system-out>
+  </testcase>
+  <testcase name="test" classname="com.lemon17.cases.RechargeCase" time="0.086">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.lemon17.cases.RechargeCase.test(RechargeCase.java:91)
+</failure>
+    <system-out><![CDATA[[INFO] 2020-05-28 23:29:25 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254)----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjgwMDYyfQ.omERaaQb8xAnf3fwJHXCrmLD96c4r9wqF1Vs4UksCT5bb7Hm4S854eLmLljxGukiYOVF35OLw-T-qUOa6U1MGA, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+[INFO] 2020-05-28 23:29:25 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138)----请求体：{"member_id":"100051395","amount":"aaa"}
+响应：{
+	"msg":"余额必须为数值型",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+断言结果：false
+]]></system-out>
+  </testcase>
+  <testcase name="test" classname="com.lemon17.cases.RechargeCase" time="1.685"/>
+</testsuite>

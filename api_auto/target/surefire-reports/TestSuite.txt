@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 14.751 s <<< FAILURE! - in TestSuite
+test(com.lemon17.cases.RechargeCase)  Time elapsed: 0.134 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.lemon17.cases.RechargeCase.test(RechargeCase.java:91)
+
+test(com.lemon17.cases.RechargeCase)  Time elapsed: 0.111 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.lemon17.cases.RechargeCase.test(RechargeCase.java:91)
+
+test(com.lemon17.cases.RechargeCase)  Time elapsed: 0.111 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.lemon17.cases.RechargeCase.test(RechargeCase.java:91)
+
+test(com.lemon17.cases.RechargeCase)  Time elapsed: 0.086 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.lemon17.cases.RechargeCase.test(RechargeCase.java:91)
+
