@@ -1,0 +1,2499 @@
+2020-05-28 16:12:23 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:12:23 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 16:12:23 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+2020-05-28 16:12:23 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+2020-05-28 16:12:23 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:12:23 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 16:12:23 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+2020-05-28 16:12:23 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+2020-05-28 16:12:24 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:12:24 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 16:12:24 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+2020-05-28 16:12:24 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+2020-05-28 16:12:24 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:12:24 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 16:12:24 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+2020-05-28 16:12:24 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+2020-05-28 16:12:24 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:12:24 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 16:12:24 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 16:17:23",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjUzODQzfQ.y7x_wgnisQFeW1qGca8SuhkhG5FnewkrFuTSr0q8fEq7dZbzqXg1npV5a2fo9pJU6nxqzrT74KKD5RmNHlk9VQ"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":1604.4,
+		"type":1
+	}
+}
+2020-05-28 16:12:24 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+2020-05-28 16:12:24 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:12:24 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 16:12:24 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 16:17:23",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjUzODQzfQ.y7x_wgnisQFeW1qGca8SuhkhG5FnewkrFuTSr0q8fEq7dZbzqXg1npV5a2fo9pJU6nxqzrT74KKD5RmNHlk9VQ"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":1604.4,
+		"type":1
+	}
+}
+2020-05-28 16:12:24 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+2020-05-28 16:15:41 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:15:41 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 16:15:42 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 16:15:42 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:15:42 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:15:42 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 16:15:42 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 16:15:42 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:15:42 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:15:42 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 16:15:42 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+
+2020-05-28 16:15:42 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:15:42 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:15:42 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 16:15:42 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+
+2020-05-28 16:15:42 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:15:42 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:15:42 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 16:15:42 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 16:20:42",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU0MDQyfQ.mAbZJheE4FSxB0Fv7TK9csfiDyOjf7S6fvbQLZbPj2qzmv6ooXVP0tbFnrdJWiZEBKjkoAi2SYXCFrPS86YuPA"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":1604.4,
+		"type":1
+	}
+}
+
+2020-05-28 16:15:42 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+
+2020-05-28 16:15:43 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:15:43 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 16:15:43 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 16:20:42",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU0MDQyfQ.mAbZJheE4FSxB0Fv7TK9csfiDyOjf7S6fvbQLZbPj2qzmv6ooXVP0tbFnrdJWiZEBKjkoAi2SYXCFrPS86YuPA"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":1604.4,
+		"type":1
+	}
+}
+
+2020-05-28 16:15:43 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:26:20 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/register HTTP/1.1
+2020-05-28 16:26:20 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 16:26:20 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/register HTTP/1.1
+2020-05-28 16:26:20 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 16:26:20 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/register HTTP/1.1
+2020-05-28 16:26:20 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456123"}
+2020-05-28 16:26:20 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/register HTTP/1.1
+2020-05-28 16:26:20 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 16:26:21 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/register HTTP/1.1
+2020-05-28 16:26:21 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 16:26:21 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/register HTTP/1.1
+2020-05-28 16:26:21 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 16:26:21 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:26:21 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 16:26:21 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 16:26:21 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:26:21 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:26:21 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 16:26:21 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 16:26:21 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:26:22 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:26:22 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 16:26:22 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+
+2020-05-28 16:26:22 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:26:22 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:26:22 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 16:26:22 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+
+2020-05-28 16:26:22 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:26:22 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:26:22 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 16:26:22 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 16:31:21",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU0NjgxfQ.Z_YRWZUOx0MvPnmuplQQfr3pky4LJRmb35oUWITfvG0U9_M3wvmgzfPuybXO5LuEQ8lQ4vltkp6ELheyIxDL_w"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":1604.4,
+		"type":1
+	}
+}
+
+2020-05-28 16:26:22 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+
+2020-05-28 16:26:22 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:26:22 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 16:26:22 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 16:31:22",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU0NjgyfQ.Sqdfk8J-tq3GBmLmjXgCW-GxCbcA986xnoa0V5IsHUhrHfuhO59E1Yy_BMG_JSBn3wdf1RzTv1DqPsV1AQ7wSA"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":1604.4,
+		"type":1
+	}
+}
+
+2020-05-28 16:26:22 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:46:36 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:46:36 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 16:46:36 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 16:46:36 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:46:36 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:46:36 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 16:46:36 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 16:46:36 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:46:36 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:46:36 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 16:46:36 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+
+2020-05-28 16:46:36 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:46:36 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:46:36 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 16:46:36 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+
+2020-05-28 16:46:36 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:46:37 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:46:37 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 16:46:37 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 16:51:36",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU1ODk2fQ.hjUL_k_Y2n_EkQaMqVI4yKrxb0l8J8TkGynM4Fxtk5bU5u6RNqr8fm1t8U-8WX8HuxNitge557dnGBe-2UhnEg"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":1604.4,
+		"type":1
+	}
+}
+
+2020-05-28 16:46:37 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+
+2020-05-28 16:46:37 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:46:37 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 16:46:37 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 16:51:36",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU1ODk2fQ.hjUL_k_Y2n_EkQaMqVI4yKrxb0l8J8TkGynM4Fxtk5bU5u6RNqr8fm1t8U-8WX8HuxNitge557dnGBe-2UhnEg"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":1604.4,
+		"type":1
+	}
+}
+
+2020-05-28 16:46:37 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:46:37 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU1ODk2fQ.hjUL_k_Y2n_EkQaMqVI4yKrxb0l8J8TkGynM4Fxtk5bU5u6RNqr8fm1t8U-8WX8HuxNitge557dnGBe-2UhnEg, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 16:46:37 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"-1","amount":"6300"}
+2020-05-28 16:46:38 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU1ODk2fQ.hjUL_k_Y2n_EkQaMqVI4yKrxb0l8J8TkGynM4Fxtk5bU5u6RNqr8fm1t8U-8WX8HuxNitge557dnGBe-2UhnEg, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 16:46:38 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"1116300"}
+2020-05-28 16:46:38 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU1ODk2fQ.hjUL_k_Y2n_EkQaMqVI4yKrxb0l8J8TkGynM4Fxtk5bU5u6RNqr8fm1t8U-8WX8HuxNitge557dnGBe-2UhnEg, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 16:46:38 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"-6300"}
+2020-05-28 16:46:38 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU1ODk2fQ.hjUL_k_Y2n_EkQaMqVI4yKrxb0l8J8TkGynM4Fxtk5bU5u6RNqr8fm1t8U-8WX8HuxNitge557dnGBe-2UhnEg, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 16:46:38 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"aaa"}
+2020-05-28 16:46:40 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU1ODk2fQ.hjUL_k_Y2n_EkQaMqVI4yKrxb0l8J8TkGynM4Fxtk5bU5u6RNqr8fm1t8U-8WX8HuxNitge557dnGBe-2UhnEg, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 16:46:40 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"200.55"}
+2020-05-28 16:50:36 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:50:36 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 16:50:37 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 16:50:37 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:50:37 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:50:37 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 16:50:37 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 16:50:37 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:50:37 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:50:37 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 16:50:37 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+
+2020-05-28 16:50:37 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:50:37 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:50:37 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 16:50:37 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+
+2020-05-28 16:50:37 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:50:37 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:50:37 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 16:50:37 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 16:55:37",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU2MTM3fQ.1mnxesTtDFSHgJ1QdOiKkKpl9t9Y8aeTjnTuVcvEhtZgfIpSgS33YwLYIRTDRSgSZZ5f2RAWDZFzkNsLAWlQbw"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":1804.95,
+		"type":1
+	}
+}
+
+2020-05-28 16:50:37 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+
+2020-05-28 16:50:38 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:50:38 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 16:50:38 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 16:55:37",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU2MTM3fQ.1mnxesTtDFSHgJ1QdOiKkKpl9t9Y8aeTjnTuVcvEhtZgfIpSgS33YwLYIRTDRSgSZZ5f2RAWDZFzkNsLAWlQbw"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":1804.95,
+		"type":1
+	}
+}
+
+2020-05-28 16:50:38 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:50:38 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU2MTM3fQ.1mnxesTtDFSHgJ1QdOiKkKpl9t9Y8aeTjnTuVcvEhtZgfIpSgS33YwLYIRTDRSgSZZ5f2RAWDZFzkNsLAWlQbw, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 16:50:38 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"-1","amount":"6300"}
+2020-05-28 16:50:39 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU2MTM3fQ.1mnxesTtDFSHgJ1QdOiKkKpl9t9Y8aeTjnTuVcvEhtZgfIpSgS33YwLYIRTDRSgSZZ5f2RAWDZFzkNsLAWlQbw, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 16:50:39 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"1116300"}
+2020-05-28 16:50:39 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU2MTM3fQ.1mnxesTtDFSHgJ1QdOiKkKpl9t9Y8aeTjnTuVcvEhtZgfIpSgS33YwLYIRTDRSgSZZ5f2RAWDZFzkNsLAWlQbw, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 16:50:39 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"-6300"}
+2020-05-28 16:50:39 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU2MTM3fQ.1mnxesTtDFSHgJ1QdOiKkKpl9t9Y8aeTjnTuVcvEhtZgfIpSgS33YwLYIRTDRSgSZZ5f2RAWDZFzkNsLAWlQbw, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 16:50:39 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"aaa"}
+2020-05-28 16:50:40 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU2MTM3fQ.1mnxesTtDFSHgJ1QdOiKkKpl9t9Y8aeTjnTuVcvEhtZgfIpSgS33YwLYIRTDRSgSZZ5f2RAWDZFzkNsLAWlQbw, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 16:50:40 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"200.55"}
+2020-05-28 16:54:50 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:54:50 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 16:54:50 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 16:54:50 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:54:50 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:54:50 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 16:54:50 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 16:54:50 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:54:50 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:54:50 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 16:54:50 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+
+2020-05-28 16:54:50 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:54:51 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:54:51 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 16:54:51 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+
+2020-05-28 16:54:51 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:54:51 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:54:51 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 16:54:51 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 16:59:50",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU2MzkwfQ.8G8maY9hCyft4gJQ375G1ATsjuc43y3Gu5lvM6ckE2kPy3aQJUDsFTLn3FuUtrPdm5R30QrLqM8R7Oajfu1ZMQ"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":2005.5,
+		"type":1
+	}
+}
+
+2020-05-28 16:54:51 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+
+2020-05-28 16:54:51 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 16:54:51 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 16:54:51 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 16:59:50",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU2MzkwfQ.8G8maY9hCyft4gJQ375G1ATsjuc43y3Gu5lvM6ckE2kPy3aQJUDsFTLn3FuUtrPdm5R30QrLqM8R7Oajfu1ZMQ"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":2005.5,
+		"type":1
+	}
+}
+
+2020-05-28 16:54:51 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 16:54:51 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU2MzkwfQ.8G8maY9hCyft4gJQ375G1ATsjuc43y3Gu5lvM6ckE2kPy3aQJUDsFTLn3FuUtrPdm5R30QrLqM8R7Oajfu1ZMQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 16:54:51 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"-1","amount":"6300"}
+2020-05-28 16:54:52 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU2MzkwfQ.8G8maY9hCyft4gJQ375G1ATsjuc43y3Gu5lvM6ckE2kPy3aQJUDsFTLn3FuUtrPdm5R30QrLqM8R7Oajfu1ZMQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 16:54:52 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"1116300"}
+2020-05-28 16:54:52 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU2MzkwfQ.8G8maY9hCyft4gJQ375G1ATsjuc43y3Gu5lvM6ckE2kPy3aQJUDsFTLn3FuUtrPdm5R30QrLqM8R7Oajfu1ZMQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 16:54:52 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"-6300"}
+2020-05-28 16:54:52 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU2MzkwfQ.8G8maY9hCyft4gJQ375G1ATsjuc43y3Gu5lvM6ckE2kPy3aQJUDsFTLn3FuUtrPdm5R30QrLqM8R7Oajfu1ZMQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 16:54:52 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"aaa"}
+2020-05-28 16:54:54 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU2MzkwfQ.8G8maY9hCyft4gJQ375G1ATsjuc43y3Gu5lvM6ckE2kPy3aQJUDsFTLn3FuUtrPdm5R30QrLqM8R7Oajfu1ZMQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 16:54:54 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"200.55"}
+2020-05-28 17:25:51 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 17:25:51 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 17:25:51 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 17:25:51 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 17:25:51 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 17:25:51 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 17:25:51 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 17:25:51 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 17:25:52 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 17:25:52 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 17:25:52 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+
+2020-05-28 17:25:52 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 17:25:52 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 17:25:52 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 17:25:52 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+
+2020-05-28 17:25:52 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 17:25:53 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 17:25:53 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 17:25:53 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 17:30:52",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU4MjUyfQ.f8PiD2Fj-EUidqC0gje6SZ6hUZs7pnQa2SmU3qzyYVM5F-A4Ol6si6fTQAEzhqiUB01zFS525xb7nbaEJ3sksA"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":2206.05,
+		"type":1
+	}
+}
+
+2020-05-28 17:25:53 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+
+2020-05-28 17:25:56 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 17:25:56 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 17:25:56 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 17:30:55",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU4MjU1fQ.iBqRqrE2tkcQOt-mU4Iv9FD1x-x4Nn0Jv2XfHRcIBU47LX5MBmUmqM-WCw8Yb-UV4G7FsR0m5KjNjUx5iJBccA"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":2206.05,
+		"type":1
+	}
+}
+
+2020-05-28 17:25:56 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 17:25:56 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU4MjU1fQ.iBqRqrE2tkcQOt-mU4Iv9FD1x-x4Nn0Jv2XfHRcIBU47LX5MBmUmqM-WCw8Yb-UV4G7FsR0m5KjNjUx5iJBccA, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 17:25:56 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"-1","amount":"6300"}
+2020-05-28 17:25:56 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU4MjU1fQ.iBqRqrE2tkcQOt-mU4Iv9FD1x-x4Nn0Jv2XfHRcIBU47LX5MBmUmqM-WCw8Yb-UV4G7FsR0m5KjNjUx5iJBccA, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 17:25:56 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"1116300"}
+2020-05-28 17:25:56 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU4MjU1fQ.iBqRqrE2tkcQOt-mU4Iv9FD1x-x4Nn0Jv2XfHRcIBU47LX5MBmUmqM-WCw8Yb-UV4G7FsR0m5KjNjUx5iJBccA, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 17:25:56 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"-6300"}
+2020-05-28 17:25:57 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU4MjU1fQ.iBqRqrE2tkcQOt-mU4Iv9FD1x-x4Nn0Jv2XfHRcIBU47LX5MBmUmqM-WCw8Yb-UV4G7FsR0m5KjNjUx5iJBccA, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 17:25:57 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"aaa"}
+2020-05-28 17:25:58 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU4MjU1fQ.iBqRqrE2tkcQOt-mU4Iv9FD1x-x4Nn0Jv2XfHRcIBU47LX5MBmUmqM-WCw8Yb-UV4G7FsR0m5KjNjUx5iJBccA, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 17:25:58 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"200.55"}
+2020-05-28 17:39:43 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 17:39:43 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 17:39:43 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 17:39:43 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 17:39:43 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 17:39:43 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 17:39:43 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 17:39:43 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 17:39:44 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 17:39:44 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 17:39:44 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+
+2020-05-28 17:39:44 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 17:39:44 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 17:39:44 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 17:39:44 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+
+2020-05-28 17:39:44 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 17:39:44 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 17:39:44 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 17:39:44 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 17:44:43",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU5MDgzfQ.NUBFUdmsFqA8-2fQK8wpCTYOCuyZMzpS4AHSj1xmdV4hv3P7O1yhhCAuNhu3sBpt9uyn3kDSGT8M7922rIpHPA"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":2406.6,
+		"type":1
+	}
+}
+
+2020-05-28 17:39:44 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+
+2020-05-28 17:39:44 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 17:39:44 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 17:39:44 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 17:44:43",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU5MDgzfQ.NUBFUdmsFqA8-2fQK8wpCTYOCuyZMzpS4AHSj1xmdV4hv3P7O1yhhCAuNhu3sBpt9uyn3kDSGT8M7922rIpHPA"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":2406.6,
+		"type":1
+	}
+}
+
+2020-05-28 17:39:44 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 17:41:26 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 17:41:26 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 17:41:27 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 17:41:27 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 17:41:27 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 17:41:27 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 17:41:27 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 17:41:27 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 17:41:27 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 17:41:27 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 17:41:27 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+
+2020-05-28 17:41:27 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 17:41:27 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 17:41:27 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 17:41:27 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+
+2020-05-28 17:41:27 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 17:41:27 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 17:41:27 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 17:41:27 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 17:46:26",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU5MTg2fQ.3a-oAZwKhL2F4kIzqq1BKUkcSeKkyNo-YK1UGeAir5MPcm1uy9zelORGVlNJVa79UaMxLvASq_sinanoCXt8TQ"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":2406.6,
+		"type":1
+	}
+}
+
+2020-05-28 17:41:27 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+
+2020-05-28 17:41:27 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 17:41:27 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 17:41:27 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 17:46:27",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU5MTg3fQ.yXspbSxZ_2r5GkqzuvvyqUU6aMu99j6qqnUaDnWuYZPwNkg-byfF75B7yrYMnX22DeUBO2iDayxQa9LYEK-J1Q"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":2406.6,
+		"type":1
+	}
+}
+
+2020-05-28 17:41:27 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 17:41:28 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU5MTg3fQ.yXspbSxZ_2r5GkqzuvvyqUU6aMu99j6qqnUaDnWuYZPwNkg-byfF75B7yrYMnX22DeUBO2iDayxQa9LYEK-J1Q, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 17:41:28 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"-1","amount":"6300"}
+2020-05-28 17:41:28 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU5MTg3fQ.yXspbSxZ_2r5GkqzuvvyqUU6aMu99j6qqnUaDnWuYZPwNkg-byfF75B7yrYMnX22DeUBO2iDayxQa9LYEK-J1Q, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 17:41:28 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"1116300"}
+2020-05-28 17:41:28 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU5MTg3fQ.yXspbSxZ_2r5GkqzuvvyqUU6aMu99j6qqnUaDnWuYZPwNkg-byfF75B7yrYMnX22DeUBO2iDayxQa9LYEK-J1Q, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 17:41:28 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"-6300"}
+2020-05-28 17:41:28 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU5MTg3fQ.yXspbSxZ_2r5GkqzuvvyqUU6aMu99j6qqnUaDnWuYZPwNkg-byfF75B7yrYMnX22DeUBO2iDayxQa9LYEK-J1Q, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 17:41:28 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"aaa"}
+2020-05-28 17:41:30 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjU5MTg3fQ.yXspbSxZ_2r5GkqzuvvyqUU6aMu99j6qqnUaDnWuYZPwNkg-byfF75B7yrYMnX22DeUBO2iDayxQa9LYEK-J1Q, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 17:41:30 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"200.55"}
+2020-05-28 22:06:53 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:06:53 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 22:06:54 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 22:06:54 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:06:54 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:06:54 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 22:06:54 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 22:06:54 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:06:54 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:06:54 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 22:06:54 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+
+2020-05-28 22:06:54 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:06:54 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:06:54 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 22:06:54 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+
+2020-05-28 22:06:54 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:06:54 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:06:54 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 22:06:54 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 22:11:52",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1MTEyfQ.-FDU3CwnQyLr0FmLWbUmyIKSxG_6YhKIuV7YRJgwufcHiiEz3yQoyqONzijrtxV2g5_A4hrnn9HAVWFbB3DP3w"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":2607.15,
+		"type":1
+	}
+}
+
+2020-05-28 22:06:54 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+
+2020-05-28 22:06:54 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:06:54 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 22:06:54 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 22:11:53",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1MTEzfQ.98cP1ta8jDQBfwH8fnoLkDinSbalBOAEmaKgPiGPeXQP2gMrN9IBaMmdA9HhtxKEO6kqvfajtZb-bGQB3rZN7Q"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":2607.15,
+		"type":1
+	}
+}
+
+2020-05-28 22:06:54 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:06:54 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1MTEzfQ.98cP1ta8jDQBfwH8fnoLkDinSbalBOAEmaKgPiGPeXQP2gMrN9IBaMmdA9HhtxKEO6kqvfajtZb-bGQB3rZN7Q, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:06:54 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"-1","amount":"6300"}
+2020-05-28 22:06:55 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1MTEzfQ.98cP1ta8jDQBfwH8fnoLkDinSbalBOAEmaKgPiGPeXQP2gMrN9IBaMmdA9HhtxKEO6kqvfajtZb-bGQB3rZN7Q, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:06:55 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"1116300"}
+2020-05-28 22:06:55 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1MTEzfQ.98cP1ta8jDQBfwH8fnoLkDinSbalBOAEmaKgPiGPeXQP2gMrN9IBaMmdA9HhtxKEO6kqvfajtZb-bGQB3rZN7Q, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:06:55 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"-6300"}
+2020-05-28 22:06:55 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1MTEzfQ.98cP1ta8jDQBfwH8fnoLkDinSbalBOAEmaKgPiGPeXQP2gMrN9IBaMmdA9HhtxKEO6kqvfajtZb-bGQB3rZN7Q, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:06:55 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"aaa"}
+2020-05-28 22:06:56 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1MTEzfQ.98cP1ta8jDQBfwH8fnoLkDinSbalBOAEmaKgPiGPeXQP2gMrN9IBaMmdA9HhtxKEO6kqvfajtZb-bGQB3rZN7Q, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:06:56 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"200.55"}
+2020-05-28 22:09:51 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:09:51 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 22:09:51 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 22:09:51 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:09:51 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:09:51 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 22:09:51 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 22:09:51 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:09:51 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:09:51 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 22:09:51 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+
+2020-05-28 22:09:51 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:09:51 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:09:51 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 22:09:51 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+
+2020-05-28 22:09:51 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:09:52 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:09:52 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 22:09:52 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 22:14:50",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1MjkwfQ.1yAZ8ZyJPg12GU8kb-GhiHL0qlTxRFAmL7TTCFYP-L060Q9VYEXLEAhmvFN4Zb2Uh--XviA6o43e1GnzPweAHw"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":2807.7,
+		"type":1
+	}
+}
+
+2020-05-28 22:09:52 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+
+2020-05-28 22:09:52 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:09:52 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 22:09:52 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 22:14:50",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1MjkwfQ.1yAZ8ZyJPg12GU8kb-GhiHL0qlTxRFAmL7TTCFYP-L060Q9VYEXLEAhmvFN4Zb2Uh--XviA6o43e1GnzPweAHw"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":2807.7,
+		"type":1
+	}
+}
+
+2020-05-28 22:09:52 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:09:52 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1MjkwfQ.1yAZ8ZyJPg12GU8kb-GhiHL0qlTxRFAmL7TTCFYP-L060Q9VYEXLEAhmvFN4Zb2Uh--XviA6o43e1GnzPweAHw, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:09:52 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"-1","amount":"6300"}
+2020-05-28 22:09:52 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1MjkwfQ.1yAZ8ZyJPg12GU8kb-GhiHL0qlTxRFAmL7TTCFYP-L060Q9VYEXLEAhmvFN4Zb2Uh--XviA6o43e1GnzPweAHw, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:09:52 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"1116300"}
+2020-05-28 22:09:52 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1MjkwfQ.1yAZ8ZyJPg12GU8kb-GhiHL0qlTxRFAmL7TTCFYP-L060Q9VYEXLEAhmvFN4Zb2Uh--XviA6o43e1GnzPweAHw, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:09:52 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"-6300"}
+2020-05-28 22:09:52 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1MjkwfQ.1yAZ8ZyJPg12GU8kb-GhiHL0qlTxRFAmL7TTCFYP-L060Q9VYEXLEAhmvFN4Zb2Uh--XviA6o43e1GnzPweAHw, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:09:52 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"aaa"}
+2020-05-28 22:09:53 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1MjkwfQ.1yAZ8ZyJPg12GU8kb-GhiHL0qlTxRFAmL7TTCFYP-L060Q9VYEXLEAhmvFN4Zb2Uh--XviA6o43e1GnzPweAHw, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:09:53 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"200.55"}
+2020-05-28 22:18:12 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:18:12 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 22:18:12 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 22:18:12 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:18:12 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:18:12 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 22:18:12 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 22:18:12 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:18:12 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:18:12 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 22:18:12 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+
+2020-05-28 22:18:12 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:18:12 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:18:12 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 22:18:12 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+
+2020-05-28 22:18:12 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:18:12 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:18:12 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 22:18:12 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 22:23:11",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1NzkxfQ.3LERYRwF21Voo89vpkacefeOyMf7oGlU4H2-U78jDdOhR7GbVQa6YnFY5nWF-1MyIqzggUHaVW3B7Bv36D6VAQ"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":3008.25,
+		"type":1
+	}
+}
+
+2020-05-28 22:18:12 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+
+2020-05-28 22:18:13 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:18:13 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 22:18:13 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 22:23:11",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1NzkxfQ.3LERYRwF21Voo89vpkacefeOyMf7oGlU4H2-U78jDdOhR7GbVQa6YnFY5nWF-1MyIqzggUHaVW3B7Bv36D6VAQ"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":3008.25,
+		"type":1
+	}
+}
+
+2020-05-28 22:18:13 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:18:13 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1NzkxfQ.3LERYRwF21Voo89vpkacefeOyMf7oGlU4H2-U78jDdOhR7GbVQa6YnFY5nWF-1MyIqzggUHaVW3B7Bv36D6VAQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:18:13 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"-1","amount":"6300"}
+2020-05-28 22:18:13 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1NzkxfQ.3LERYRwF21Voo89vpkacefeOyMf7oGlU4H2-U78jDdOhR7GbVQa6YnFY5nWF-1MyIqzggUHaVW3B7Bv36D6VAQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:18:13 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"1116300"}
+2020-05-28 22:18:13 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1NzkxfQ.3LERYRwF21Voo89vpkacefeOyMf7oGlU4H2-U78jDdOhR7GbVQa6YnFY5nWF-1MyIqzggUHaVW3B7Bv36D6VAQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:18:13 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"-6300"}
+2020-05-28 22:18:13 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1NzkxfQ.3LERYRwF21Voo89vpkacefeOyMf7oGlU4H2-U78jDdOhR7GbVQa6YnFY5nWF-1MyIqzggUHaVW3B7Bv36D6VAQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:18:13 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"aaa"}
+2020-05-28 22:18:14 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1NzkxfQ.3LERYRwF21Voo89vpkacefeOyMf7oGlU4H2-U78jDdOhR7GbVQa6YnFY5nWF-1MyIqzggUHaVW3B7Bv36D6VAQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:18:14 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"200.55"}
+2020-05-28 22:19:51 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:19:51 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 22:19:52 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 22:19:52 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:19:52 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:19:52 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 22:19:52 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 22:19:52 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:19:52 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:19:52 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 22:19:52 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+
+2020-05-28 22:19:52 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:19:52 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:19:52 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 22:19:52 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+
+2020-05-28 22:19:52 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:19:52 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:19:52 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 22:19:52 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 22:24:51",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1ODkxfQ.rjTURLg7QK_bsqntP8Vtg_k8MJZaTfMNTMcnM74ASHK-rZ_o3FlDjsHIFZbWC8Hh7Wzb70C82VitVq6Rt_ZYMQ"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":3208.8,
+		"type":1
+	}
+}
+
+2020-05-28 22:19:52 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+
+2020-05-28 22:19:52 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:19:52 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 22:19:52 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 22:24:51",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1ODkxfQ.rjTURLg7QK_bsqntP8Vtg_k8MJZaTfMNTMcnM74ASHK-rZ_o3FlDjsHIFZbWC8Hh7Wzb70C82VitVq6Rt_ZYMQ"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":3208.8,
+		"type":1
+	}
+}
+
+2020-05-28 22:19:52 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:19:52 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1ODkxfQ.rjTURLg7QK_bsqntP8Vtg_k8MJZaTfMNTMcnM74ASHK-rZ_o3FlDjsHIFZbWC8Hh7Wzb70C82VitVq6Rt_ZYMQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:19:52 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"-1","amount":"6300"}
+2020-05-28 22:19:52 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1ODkxfQ.rjTURLg7QK_bsqntP8Vtg_k8MJZaTfMNTMcnM74ASHK-rZ_o3FlDjsHIFZbWC8Hh7Wzb70C82VitVq6Rt_ZYMQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:19:52 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"1116300"}
+2020-05-28 22:19:53 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1ODkxfQ.rjTURLg7QK_bsqntP8Vtg_k8MJZaTfMNTMcnM74ASHK-rZ_o3FlDjsHIFZbWC8Hh7Wzb70C82VitVq6Rt_ZYMQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:19:53 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"-6300"}
+2020-05-28 22:19:53 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1ODkxfQ.rjTURLg7QK_bsqntP8Vtg_k8MJZaTfMNTMcnM74ASHK-rZ_o3FlDjsHIFZbWC8Hh7Wzb70C82VitVq6Rt_ZYMQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:19:53 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"aaa"}
+2020-05-28 22:19:54 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc1ODkxfQ.rjTURLg7QK_bsqntP8Vtg_k8MJZaTfMNTMcnM74ASHK-rZ_o3FlDjsHIFZbWC8Hh7Wzb70C82VitVq6Rt_ZYMQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:19:54 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"200.55"}
+2020-05-28 22:23:19 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:23:19 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 22:23:20 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 22:23:20 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:23:20 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:23:20 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 22:23:20 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 22:23:20 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:23:20 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:23:20 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 22:23:20 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+
+2020-05-28 22:23:20 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:23:21 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:23:21 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 22:23:21 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+
+2020-05-28 22:23:21 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:23:21 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:23:21 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 22:23:21 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 22:28:20",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2MTAwfQ.HtsSLLu1XkkKMkUgBzipvxjVcfy5XxH4RtGZH3v2QPX32NxcUhJaKwMgKfNr7wqPaEry39JZBs9ANA8JvBJgQQ"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":3409.35,
+		"type":1
+	}
+}
+
+2020-05-28 22:23:21 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+
+2020-05-28 22:23:21 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:23:21 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 22:23:21 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 22:28:20",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2MTAwfQ.HtsSLLu1XkkKMkUgBzipvxjVcfy5XxH4RtGZH3v2QPX32NxcUhJaKwMgKfNr7wqPaEry39JZBs9ANA8JvBJgQQ"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":3409.35,
+		"type":1
+	}
+}
+
+2020-05-28 22:23:21 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:23:22 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2MTAwfQ.HtsSLLu1XkkKMkUgBzipvxjVcfy5XxH4RtGZH3v2QPX32NxcUhJaKwMgKfNr7wqPaEry39JZBs9ANA8JvBJgQQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:23:22 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"-1","amount":"6300"}
+2020-05-28 22:23:22 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2MTAwfQ.HtsSLLu1XkkKMkUgBzipvxjVcfy5XxH4RtGZH3v2QPX32NxcUhJaKwMgKfNr7wqPaEry39JZBs9ANA8JvBJgQQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:23:22 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"1116300"}
+2020-05-28 22:23:22 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2MTAwfQ.HtsSLLu1XkkKMkUgBzipvxjVcfy5XxH4RtGZH3v2QPX32NxcUhJaKwMgKfNr7wqPaEry39JZBs9ANA8JvBJgQQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:23:22 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"-6300"}
+2020-05-28 22:23:22 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2MTAwfQ.HtsSLLu1XkkKMkUgBzipvxjVcfy5XxH4RtGZH3v2QPX32NxcUhJaKwMgKfNr7wqPaEry39JZBs9ANA8JvBJgQQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:23:22 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"aaa"}
+2020-05-28 22:23:23 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2MTAwfQ.HtsSLLu1XkkKMkUgBzipvxjVcfy5XxH4RtGZH3v2QPX32NxcUhJaKwMgKfNr7wqPaEry39JZBs9ANA8JvBJgQQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:23:23 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"200.55"}
+2020-05-28 22:26:21 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:26:21 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 22:26:21 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 22:26:21 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:26:21 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:26:21 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 22:26:21 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 22:26:21 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:26:21 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:26:21 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 22:26:21 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+
+2020-05-28 22:26:21 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:26:21 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:26:21 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 22:26:21 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+
+2020-05-28 22:26:21 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:26:21 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:26:21 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 22:26:21 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 22:31:20",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2MjgwfQ.iRrRvszDVhZlrS_D6goNyf5yEO3NmAFwf22f4ZnxPJPmrLTEYTk4ruEu65TC1FFLKtP1hBY7SdnVhSj-WQnjcQ"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":3609.9,
+		"type":1
+	}
+}
+
+2020-05-28 22:26:21 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+
+2020-05-28 22:26:22 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:26:22 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 22:26:22 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 22:31:20",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2MjgwfQ.iRrRvszDVhZlrS_D6goNyf5yEO3NmAFwf22f4ZnxPJPmrLTEYTk4ruEu65TC1FFLKtP1hBY7SdnVhSj-WQnjcQ"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":3609.9,
+		"type":1
+	}
+}
+
+2020-05-28 22:26:22 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:26:22 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2MjgwfQ.iRrRvszDVhZlrS_D6goNyf5yEO3NmAFwf22f4ZnxPJPmrLTEYTk4ruEu65TC1FFLKtP1hBY7SdnVhSj-WQnjcQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:26:22 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"-1","amount":"6300"}
+2020-05-28 22:26:22 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2MjgwfQ.iRrRvszDVhZlrS_D6goNyf5yEO3NmAFwf22f4ZnxPJPmrLTEYTk4ruEu65TC1FFLKtP1hBY7SdnVhSj-WQnjcQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:26:22 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"1116300"}
+2020-05-28 22:26:22 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2MjgwfQ.iRrRvszDVhZlrS_D6goNyf5yEO3NmAFwf22f4ZnxPJPmrLTEYTk4ruEu65TC1FFLKtP1hBY7SdnVhSj-WQnjcQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:26:22 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"-6300"}
+2020-05-28 22:26:22 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2MjgwfQ.iRrRvszDVhZlrS_D6goNyf5yEO3NmAFwf22f4ZnxPJPmrLTEYTk4ruEu65TC1FFLKtP1hBY7SdnVhSj-WQnjcQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:26:22 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"aaa"}
+2020-05-28 22:26:23 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2MjgwfQ.iRrRvszDVhZlrS_D6goNyf5yEO3NmAFwf22f4ZnxPJPmrLTEYTk4ruEu65TC1FFLKtP1hBY7SdnVhSj-WQnjcQ, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:26:23 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"200.55"}
+2020-05-28 22:28:10 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:28:10 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 22:28:10 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 22:28:10 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:28:10 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:28:10 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 22:28:10 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 22:28:10 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:28:10 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:28:10 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 22:28:10 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+
+2020-05-28 22:28:10 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:28:11 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:28:11 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 22:28:11 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+
+2020-05-28 22:28:11 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:28:11 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:28:11 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 22:28:11 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 22:33:09",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2Mzg5fQ.6W9lKwPB22ZU4cb-5fwUhq-KrbxIlUYoxsTkOKGUh_xvyFbOp06N8JEDLwiIiP4QDTl_MixWRLSSTsiRrQVkyA"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":3810.45,
+		"type":1
+	}
+}
+
+2020-05-28 22:28:11 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+
+2020-05-28 22:28:11 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:28:11 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 22:28:11 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 22:33:09",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2Mzg5fQ.6W9lKwPB22ZU4cb-5fwUhq-KrbxIlUYoxsTkOKGUh_xvyFbOp06N8JEDLwiIiP4QDTl_MixWRLSSTsiRrQVkyA"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":3810.45,
+		"type":1
+	}
+}
+
+2020-05-28 22:28:11 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:28:11 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2Mzg5fQ.6W9lKwPB22ZU4cb-5fwUhq-KrbxIlUYoxsTkOKGUh_xvyFbOp06N8JEDLwiIiP4QDTl_MixWRLSSTsiRrQVkyA, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:28:11 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"-1","amount":"6300"}
+2020-05-28 22:28:11 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2Mzg5fQ.6W9lKwPB22ZU4cb-5fwUhq-KrbxIlUYoxsTkOKGUh_xvyFbOp06N8JEDLwiIiP4QDTl_MixWRLSSTsiRrQVkyA, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:28:11 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"1116300"}
+2020-05-28 22:28:11 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2Mzg5fQ.6W9lKwPB22ZU4cb-5fwUhq-KrbxIlUYoxsTkOKGUh_xvyFbOp06N8JEDLwiIiP4QDTl_MixWRLSSTsiRrQVkyA, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:28:11 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"-6300"}
+2020-05-28 22:28:11 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2Mzg5fQ.6W9lKwPB22ZU4cb-5fwUhq-KrbxIlUYoxsTkOKGUh_xvyFbOp06N8JEDLwiIiP4QDTl_MixWRLSSTsiRrQVkyA, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:28:11 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"aaa"}
+2020-05-28 22:28:13 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2Mzg5fQ.6W9lKwPB22ZU4cb-5fwUhq-KrbxIlUYoxsTkOKGUh_xvyFbOp06N8JEDLwiIiP4QDTl_MixWRLSSTsiRrQVkyA, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:28:13 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"200.55"}
+2020-05-28 22:31:27 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:31:27 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 22:31:27 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 22:31:27 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:31:27 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:31:27 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 22:31:27 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 22:31:27 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:31:27 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:31:27 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 22:31:27 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+
+2020-05-28 22:31:27 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:31:28 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:31:28 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 22:31:28 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+
+2020-05-28 22:31:28 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:31:28 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:31:28 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 22:31:28 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 22:36:26",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2NTg2fQ.cUs7z1gFtzUr0K7Y9_0pUKVNxShCcTwvdC5y4hdgUU6vBIt2irWooJ-GAY2IhxktG3ToQPWC6i3G4O3-FzylQw"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":4011.0,
+		"type":1
+	}
+}
+
+2020-05-28 22:31:28 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+
+2020-05-28 22:31:28 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:31:28 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 22:31:28 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 22:36:26",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2NTg2fQ.cUs7z1gFtzUr0K7Y9_0pUKVNxShCcTwvdC5y4hdgUU6vBIt2irWooJ-GAY2IhxktG3ToQPWC6i3G4O3-FzylQw"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":4011.0,
+		"type":1
+	}
+}
+
+2020-05-28 22:31:28 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:31:28 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2NTg2fQ.cUs7z1gFtzUr0K7Y9_0pUKVNxShCcTwvdC5y4hdgUU6vBIt2irWooJ-GAY2IhxktG3ToQPWC6i3G4O3-FzylQw, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:31:28 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"-1","amount":"6300"}
+2020-05-28 22:31:28 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2NTg2fQ.cUs7z1gFtzUr0K7Y9_0pUKVNxShCcTwvdC5y4hdgUU6vBIt2irWooJ-GAY2IhxktG3ToQPWC6i3G4O3-FzylQw, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:31:28 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"1116300"}
+2020-05-28 22:31:28 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2NTg2fQ.cUs7z1gFtzUr0K7Y9_0pUKVNxShCcTwvdC5y4hdgUU6vBIt2irWooJ-GAY2IhxktG3ToQPWC6i3G4O3-FzylQw, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:31:28 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"-6300"}
+2020-05-28 22:31:28 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2NTg2fQ.cUs7z1gFtzUr0K7Y9_0pUKVNxShCcTwvdC5y4hdgUU6vBIt2irWooJ-GAY2IhxktG3ToQPWC6i3G4O3-FzylQw, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:31:28 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"aaa"}
+2020-05-28 22:31:29 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc2NTg2fQ.cUs7z1gFtzUr0K7Y9_0pUKVNxShCcTwvdC5y4hdgUU6vBIt2irWooJ-GAY2IhxktG3ToQPWC6i3G4O3-FzylQw, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:31:29 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"200.55"}
+2020-05-28 22:45:38 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:45:38 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 22:45:38 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 22:45:38 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:45:38 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:45:38 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 22:45:38 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 22:45:38 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:45:39 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:45:39 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 22:45:39 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+
+2020-05-28 22:45:39 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:45:39 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:45:39 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 22:45:39 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+
+2020-05-28 22:45:39 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:45:39 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:45:39 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 22:45:39 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 22:50:37",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc3NDM3fQ.qaRS2D_Jkcsjw5YwrIBHH8gDsli6wEJdDW1ShyCH_F5BmjkVz8j425QrW7DYe5FzO0Xzpuvmhy6mA95IQSRfyQ"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":4211.55,
+		"type":1
+	}
+}
+
+2020-05-28 22:45:39 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+
+2020-05-28 22:45:39 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:45:39 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 22:45:39 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 22:50:38",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc3NDM4fQ.dl7Vn0_HeQ1zJJ9JNmjS0L4dgCSSQpy0xr4v-_s7EGxIEECsfzmeDefsDD4e7ONP_ymhlc8VkTvKbemdhuZ-eg"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":4211.55,
+		"type":1
+	}
+}
+
+2020-05-28 22:45:39 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:45:39 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc3NDM4fQ.dl7Vn0_HeQ1zJJ9JNmjS0L4dgCSSQpy0xr4v-_s7EGxIEECsfzmeDefsDD4e7ONP_ymhlc8VkTvKbemdhuZ-eg, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:45:39 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"-1","amount":"6300"}
+2020-05-28 22:45:39 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc3NDM4fQ.dl7Vn0_HeQ1zJJ9JNmjS0L4dgCSSQpy0xr4v-_s7EGxIEECsfzmeDefsDD4e7ONP_ymhlc8VkTvKbemdhuZ-eg, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:45:39 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"1116300"}
+2020-05-28 22:45:39 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc3NDM4fQ.dl7Vn0_HeQ1zJJ9JNmjS0L4dgCSSQpy0xr4v-_s7EGxIEECsfzmeDefsDD4e7ONP_ymhlc8VkTvKbemdhuZ-eg, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:45:39 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"-6300"}
+2020-05-28 22:45:40 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc3NDM4fQ.dl7Vn0_HeQ1zJJ9JNmjS0L4dgCSSQpy0xr4v-_s7EGxIEECsfzmeDefsDD4e7ONP_ymhlc8VkTvKbemdhuZ-eg, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:45:40 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"aaa"}
+2020-05-28 22:45:41 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc3NDM4fQ.dl7Vn0_HeQ1zJJ9JNmjS0L4dgCSSQpy0xr4v-_s7EGxIEECsfzmeDefsDD4e7ONP_ymhlc8VkTvKbemdhuZ-eg, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:45:41 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"200.55"}
+2020-05-28 22:55:28 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:55:28 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 22:55:28 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 22:55:28 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:55:29 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:55:29 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 22:55:29 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 22:55:29 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:55:29 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:55:29 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 22:55:29 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+
+2020-05-28 22:55:29 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:55:29 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:55:29 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 22:55:29 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+
+2020-05-28 22:55:29 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:55:29 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:55:29 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 22:55:29 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 23:00:28",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc4MDI4fQ._vma60oEMcKgBgO8ilytdstCHYM25ztVVD4BjNyoZIXX8bRKZWOMxjiWQH0iKTmairm2dV_mpmKcGWV9EMcv-A"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":4412.1,
+		"type":1
+	}
+}
+
+2020-05-28 22:55:29 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+
+2020-05-28 22:55:29 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:55:29 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 22:55:29 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 23:00:28",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc4MDI4fQ._vma60oEMcKgBgO8ilytdstCHYM25ztVVD4BjNyoZIXX8bRKZWOMxjiWQH0iKTmairm2dV_mpmKcGWV9EMcv-A"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":4412.1,
+		"type":1
+	}
+}
+
+2020-05-28 22:55:29 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:55:30 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc4MDI4fQ._vma60oEMcKgBgO8ilytdstCHYM25ztVVD4BjNyoZIXX8bRKZWOMxjiWQH0iKTmairm2dV_mpmKcGWV9EMcv-A, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:55:30 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"-1","amount":"6300"}
+2020-05-28 22:55:30 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc4MDI4fQ._vma60oEMcKgBgO8ilytdstCHYM25ztVVD4BjNyoZIXX8bRKZWOMxjiWQH0iKTmairm2dV_mpmKcGWV9EMcv-A, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:55:30 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"1116300"}
+2020-05-28 22:55:30 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc4MDI4fQ._vma60oEMcKgBgO8ilytdstCHYM25ztVVD4BjNyoZIXX8bRKZWOMxjiWQH0iKTmairm2dV_mpmKcGWV9EMcv-A, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:55:30 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"-6300"}
+2020-05-28 22:55:30 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc4MDI4fQ._vma60oEMcKgBgO8ilytdstCHYM25ztVVD4BjNyoZIXX8bRKZWOMxjiWQH0iKTmairm2dV_mpmKcGWV9EMcv-A, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:55:30 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"aaa"}
+2020-05-28 22:55:31 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc4MDI4fQ._vma60oEMcKgBgO8ilytdstCHYM25ztVVD4BjNyoZIXX8bRKZWOMxjiWQH0iKTmairm2dV_mpmKcGWV9EMcv-A, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:55:31 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"200.55"}
+2020-05-28 22:56:09 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:56:09 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 22:56:09 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 22:56:09 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:56:09 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:56:09 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 22:56:09 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 22:56:09 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:56:09 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:56:09 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 22:56:09 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+
+2020-05-28 22:56:09 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:56:09 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:56:09 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 22:56:09 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+
+2020-05-28 22:56:09 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:56:10 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:56:10 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 22:56:10 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 23:01:08",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc4MDY4fQ.NolmHDWK0YKfsVYSFkakCm5lZLpcRRsE1qVAGaIW5OKZhZ2NunBfL7heumgvR1R913fTVkXF5tjY_pDG8Y6EOw"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":4612.65,
+		"type":1
+	}
+}
+
+2020-05-28 22:56:10 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+
+2020-05-28 22:56:10 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 22:56:10 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 22:56:10 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 23:01:08",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc4MDY4fQ.NolmHDWK0YKfsVYSFkakCm5lZLpcRRsE1qVAGaIW5OKZhZ2NunBfL7heumgvR1R913fTVkXF5tjY_pDG8Y6EOw"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":4612.65,
+		"type":1
+	}
+}
+
+2020-05-28 22:56:10 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 22:56:10 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc4MDY4fQ.NolmHDWK0YKfsVYSFkakCm5lZLpcRRsE1qVAGaIW5OKZhZ2NunBfL7heumgvR1R913fTVkXF5tjY_pDG8Y6EOw, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:56:10 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"-1","amount":"6300"}
+2020-05-28 22:56:10 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc4MDY4fQ.NolmHDWK0YKfsVYSFkakCm5lZLpcRRsE1qVAGaIW5OKZhZ2NunBfL7heumgvR1R913fTVkXF5tjY_pDG8Y6EOw, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:56:10 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"1116300"}
+2020-05-28 22:56:10 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc4MDY4fQ.NolmHDWK0YKfsVYSFkakCm5lZLpcRRsE1qVAGaIW5OKZhZ2NunBfL7heumgvR1R913fTVkXF5tjY_pDG8Y6EOw, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:56:10 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"-6300"}
+2020-05-28 22:56:10 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc4MDY4fQ.NolmHDWK0YKfsVYSFkakCm5lZLpcRRsE1qVAGaIW5OKZhZ2NunBfL7heumgvR1R913fTVkXF5tjY_pDG8Y6EOw, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:56:10 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"aaa"}
+2020-05-28 22:56:12 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc4MDY4fQ.NolmHDWK0YKfsVYSFkakCm5lZLpcRRsE1qVAGaIW5OKZhZ2NunBfL7heumgvR1R913fTVkXF5tjY_pDG8Y6EOw, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 22:56:12 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"200.55"}
+2020-05-28 23:26:56 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 23:26:56 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 23:26:56 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 23:26:56 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 23:26:56 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 23:26:56 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 23:26:56 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 23:26:56 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 23:26:57 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 23:26:57 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 23:26:57 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+
+2020-05-28 23:26:57 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 23:26:57 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 23:26:57 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 23:26:57 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+
+2020-05-28 23:26:57 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 23:26:57 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 23:26:57 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 23:26:57 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 23:31:55",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc5OTE1fQ.Yy5u7ehmq1KcmDxISwGzu6M_T9x6MM8h4Tr-WdzC9BKDwHdJF8EFdZe8ZrS57c2c6vPdChU00ljrHElH1FJcBg"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":4813.2,
+		"type":1
+	}
+}
+
+2020-05-28 23:26:57 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+
+2020-05-28 23:26:57 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 23:26:57 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 23:26:57 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 23:31:56",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc5OTE2fQ.wOHlfLCwcvAjJPjQW_epz2rW_C1Rw3Ofazy2-lNNWrAc3nsKEXHIA7aKCxLcqWjlzJbhK7chKlo3ACDm5ufFow"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":4813.2,
+		"type":1
+	}
+}
+
+2020-05-28 23:26:57 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 23:26:57 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc5OTE2fQ.wOHlfLCwcvAjJPjQW_epz2rW_C1Rw3Ofazy2-lNNWrAc3nsKEXHIA7aKCxLcqWjlzJbhK7chKlo3ACDm5ufFow, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 23:26:57 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"-1","amount":"6300"}
+2020-05-28 23:26:57 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc5OTE2fQ.wOHlfLCwcvAjJPjQW_epz2rW_C1Rw3Ofazy2-lNNWrAc3nsKEXHIA7aKCxLcqWjlzJbhK7chKlo3ACDm5ufFow, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 23:26:57 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"1116300"}
+2020-05-28 23:26:57 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc5OTE2fQ.wOHlfLCwcvAjJPjQW_epz2rW_C1Rw3Ofazy2-lNNWrAc3nsKEXHIA7aKCxLcqWjlzJbhK7chKlo3ACDm5ufFow, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 23:26:57 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"-6300"}
+2020-05-28 23:26:58 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc5OTE2fQ.wOHlfLCwcvAjJPjQW_epz2rW_C1Rw3Ofazy2-lNNWrAc3nsKEXHIA7aKCxLcqWjlzJbhK7chKlo3ACDm5ufFow, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 23:26:58 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"aaa"}
+2020-05-28 23:26:59 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjc5OTE2fQ.wOHlfLCwcvAjJPjQW_epz2rW_C1Rw3Ofazy2-lNNWrAc3nsKEXHIA7aKCxLcqWjlzJbhK7chKlo3ACDm5ufFow, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 23:26:59 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"200.55"}
+2020-05-28 23:28:29 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 23:28:29 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 23:28:29 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 23:28:29 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 23:28:30 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 23:28:30 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 23:28:30 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 23:28:30 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 23:28:30 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 23:28:30 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 23:28:30 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+
+2020-05-28 23:28:30 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 23:28:30 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 23:28:30 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 23:28:30 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+
+2020-05-28 23:28:30 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 23:28:30 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 23:28:30 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 23:28:30 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 23:33:29",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjgwMDA5fQ.XEtivWkHV1a8pESgMZuTQ3NKGZSS7aWt687VngUMeO7VNO-GFwQw1fXXPx-z3xM7lq-vRjS59X0suINFsL7L3w"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":5013.75,
+		"type":1
+	}
+}
+
+2020-05-28 23:28:30 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+
+2020-05-28 23:28:30 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 23:28:30 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 23:28:30 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 23:33:29",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjgwMDA5fQ.XEtivWkHV1a8pESgMZuTQ3NKGZSS7aWt687VngUMeO7VNO-GFwQw1fXXPx-z3xM7lq-vRjS59X0suINFsL7L3w"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":5013.75,
+		"type":1
+	}
+}
+
+2020-05-28 23:28:30 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 23:28:30 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjgwMDA5fQ.XEtivWkHV1a8pESgMZuTQ3NKGZSS7aWt687VngUMeO7VNO-GFwQw1fXXPx-z3xM7lq-vRjS59X0suINFsL7L3w, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 23:28:30 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"-1","amount":"6300"}
+2020-05-28 23:28:30 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjgwMDA5fQ.XEtivWkHV1a8pESgMZuTQ3NKGZSS7aWt687VngUMeO7VNO-GFwQw1fXXPx-z3xM7lq-vRjS59X0suINFsL7L3w, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 23:28:30 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"1116300"}
+2020-05-28 23:28:31 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjgwMDA5fQ.XEtivWkHV1a8pESgMZuTQ3NKGZSS7aWt687VngUMeO7VNO-GFwQw1fXXPx-z3xM7lq-vRjS59X0suINFsL7L3w, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 23:28:31 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"-6300"}
+2020-05-28 23:28:31 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjgwMDA5fQ.XEtivWkHV1a8pESgMZuTQ3NKGZSS7aWt687VngUMeO7VNO-GFwQw1fXXPx-z3xM7lq-vRjS59X0suINFsL7L3w, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 23:28:31 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"aaa"}
+2020-05-28 23:28:32 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjgwMDA5fQ.XEtivWkHV1a8pESgMZuTQ3NKGZSS7aWt687VngUMeO7VNO-GFwQw1fXXPx-z3xM7lq-vRjS59X0suINFsL7L3w, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 23:28:32 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"200.55"}
+2020-05-28 23:29:22 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 23:29:22 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"19000000000","pwd":""}
+2020-05-28 23:29:23 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"密码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 23:29:23 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 23:29:23 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 23:29:23 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"","pwd":"123456"}
+2020-05-28 23:29:23 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"手机号码为空",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1,
+	"data":null
+}
+
+2020-05-28 23:29:23 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 23:29:23 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 23:29:23 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"123","pwd":"123456"}
+2020-05-28 23:29:23 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"无效的手机格式",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":2,
+	"data":null
+}
+
+2020-05-28 23:29:23 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 23:29:23 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 23:29:23 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345"}
+2020-05-28 23:29:23 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"账号信息错误",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":1001,
+	"data":null
+}
+
+2020-05-28 23:29:23 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 23:29:24 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 23:29:24 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 23:29:24 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 23:34:22",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjgwMDYyfQ.omERaaQb8xAnf3fwJHXCrmLD96c4r9wqF1Vs4UksCT5bb7Hm4S854eLmLljxGukiYOVF35OLw-T-qUOa6U1MGA"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":5214.3,
+		"type":1
+	}
+}
+
+2020-05-28 23:29:24 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：true
+
+2020-05-28 23:29:24 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/login HTTP/1.1
+2020-05-28 23:29:24 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"mobile_phone":"13000005555","pwd":"12345678"}
+2020-05-28 23:29:24 method: com.lemon17.cases.LoginCase.test(LoginCase.java:47) - [ INFO ]----响应：{
+	"msg":"OK",
+	"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved",
+	"code":0,
+	"data":{
+		"token_info":{
+			"token_type":"Bearer",
+			"expires_in":"2020-05-28 23:34:22",
+			"token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjgwMDYyfQ.omERaaQb8xAnf3fwJHXCrmLD96c4r9wqF1Vs4UksCT5bb7Hm4S854eLmLljxGukiYOVF35OLw-T-qUOa6U1MGA"
+		},
+		"mobile_phone":"13000005555",
+		"reg_time":"2020-05-26 15:34:22.0",
+		"reg_name":"小柠檬",
+		"id":100051395,
+		"leave_amount":5214.3,
+		"type":1
+	}
+}
+
+2020-05-28 23:29:24 method: com.lemon17.cases.LoginCase.test(LoginCase.java:58) - [ INFO ]----断言结果：false
+
+2020-05-28 23:29:24 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjgwMDYyfQ.omERaaQb8xAnf3fwJHXCrmLD96c4r9wqF1Vs4UksCT5bb7Hm4S854eLmLljxGukiYOVF35OLw-T-qUOa6U1MGA, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 23:29:24 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"-1","amount":"6300"}
+2020-05-28 23:29:24 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjgwMDYyfQ.omERaaQb8xAnf3fwJHXCrmLD96c4r9wqF1Vs4UksCT5bb7Hm4S854eLmLljxGukiYOVF35OLw-T-qUOa6U1MGA, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 23:29:24 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"1116300"}
+2020-05-28 23:29:24 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjgwMDYyfQ.omERaaQb8xAnf3fwJHXCrmLD96c4r9wqF1Vs4UksCT5bb7Hm4S854eLmLljxGukiYOVF35OLw-T-qUOa6U1MGA, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 23:29:24 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"-6300"}
+2020-05-28 23:29:25 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjgwMDYyfQ.omERaaQb8xAnf3fwJHXCrmLD96c4r9wqF1Vs4UksCT5bb7Hm4S854eLmLljxGukiYOVF35OLw-T-qUOa6U1MGA, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 23:29:25 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"aaa"}
+2020-05-28 23:29:26 method: com.lemon17.utils.HttpUtils.getRequest(HttpUtils.java:254) - [ INFO ]----请求：[Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDA1MTM5NSwiZXhwIjoxNTkwNjgwMDYyfQ.omERaaQb8xAnf3fwJHXCrmLD96c4r9wqF1Vs4UksCT5bb7Hm4S854eLmLljxGukiYOVF35OLw-T-qUOa6U1MGA, X-Lemonban-Media-Type: lemonban.v2, Content-Type: application/json]
+POST http://api.lemonban.com/futureloan/member/recharge HTTP/1.1
+2020-05-28 23:29:26 method: com.lemon17.utils.HttpUtils.post(HttpUtils.java:138) - [ INFO ]----请求体：{"member_id":"100051395","amount":"200.55"}
